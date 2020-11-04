@@ -1,0 +1,169 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    
+    <style>
+        
+        #main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%) 
+        }
+        img{
+            width: 50%;
+            margin-bottom: 5%;
+        }
+        #search{
+            background-image: url('http://www.clker.com/cliparts/z/1/T/u/9/2/search-icon-hi.png');
+            background-size: 5%;
+            background-position: 1%;
+            background-repeat: no-repeat;
+            border: 1px solid #DEE0E4;
+            border-radius: 30px;
+            width: 484px;
+            height: 46px;
+        }
+        .submit{
+            background-color: #f1f1f1;
+            border: 1px solid #f1f1f1;
+            padding: 0px 16px 0px 16px;
+            margin: 11px 4px 11px 4px;
+            text-align: center;
+            font-family: arial,sans-serif;
+            font-size: 14px;
+            position: relative;
+            left: 20%;
+        }
+        #submit0{
+            width: 127.367px;
+            height: 36px;
+            
+        }
+        #submit1{
+            width: 142.467px;
+            height: 36px;
+        }
+        #top-nav{
+            position: fixed;
+            top: 0%;
+            width: 100%;
+            left: -5%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-family: arial,sans-serif;
+            color: #3a3a3a;
+            font-size: 13px;
+        }
+        #bottom-nav{
+            position: fixed;
+            bottom: 0%;
+            width: 100%;
+            left: 0%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-family: arial,sans-serif;
+            font-size: 13px;
+            background-color: #f1f1f1;
+            color: #606368;
+        }
+        #top-nav li, #bottom-nav li{
+            list-style: none;
+            display: inline;
+        }
+        #lt-nav{
+            text-align: left;
+        }
+        #lt-nav li{
+            text-align: left;
+            margin: 0px 10px 0px 10px;
+        }
+        #rt-nav li{
+            margin: 0px 10px 0px 10px;
+        }
+        #rt-nav img{ width: 3%; position: absolute; margin-top: -4px;}
+        #sign-in{ 
+            position: relative;
+            left: 15%;
+            background-color: #5381F4;
+            border: 1px solid #5381F4; border-radius: 1px;
+            width: 50px;
+            height: 20px;
+            font-family: arial,sans-serif;
+            font-size: 10px;
+            color: #f1f1f1;
+            padding: 0px 1px 0px 1px;
+            margin: -21px 0px 0px 10px;
+            text-align: center;
+            }
+        #lb-nav{
+            text-align: left;
+            margin: 0px 0px 0px -30px;
+        }
+        #lb-nav li{
+            margin: 0px 10px 0px 0px;
+        }
+        #rb-nav{
+            margin: 0px 15px 0px 0px;
+        }
+        #rb-nav li{
+            margin: 0px 0px 0px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="top-nav">
+        <div id="lt-nav">
+            <ul>
+                <li>About</li>
+                <li>Store</li>
+            </ul>
+        </div>
+        <div id="rt-nav">
+            <ul>
+                <li>Gmail</li>
+                <li>Images</li>
+                <img src="https://i.ibb.co/qgY4y4j/googleE1.png" alt="">
+                <button type="submit" id="sign-in">Sign in</button>
+            </ul>
+        </div>
+    </nav>
+    <div id="main">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="googlelogo">
+        <form>
+            <input type="text" id="search">
+            <br>
+            <button type="submit" id ="submit0" class="submit">Google Search</button>
+            <button type="submit" id="submit1" class="submit">I'm Feeling Lucky</button>
+        </form>
+    </div>
+    <nav id="bottom-nav">
+        <div id="lb-nav">
+            <ul>
+                <li>Advertising</li>
+                <li>Business</li>
+                <li>How Search works</li>
+            </ul>
+        </div>
+        <div id="rb-nav">
+            <ul>
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Settings</li>
+            </ul>
+        </div>
+    </nav>
+</body>
+
+</html>
